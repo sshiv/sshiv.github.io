@@ -4,9 +4,8 @@ excerpt_separator: "<!--more-->"
 categories:
   - Blog
 tags:
-  - Post Formats
-  - readability
-  - standard
+  - python
+  - pytorch
 ---
 
 One way to get the input and output sizes for Layers/Modules in a PyTorch model is to register a forward hook using [torch.nn.modules.module.register_module_forward_hook](https://pytorch.org/docs/stable/generated/torch.nn.modules.module.register_module_forward_hook.html). 
