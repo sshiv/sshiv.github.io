@@ -1,5 +1,5 @@
 ---
-title: "Post: Standard"
+title: "Get all Input & Output Sizes of for Layers of a PyTorch Model"
 excerpt_separator: "<!--more-->"
 categories:
   - Blog
@@ -28,7 +28,9 @@ class TorchModelSummary:
     def get_forward_hook(self, module_name : str):
         """ Wrap the hook to associate the module name """
         def forward_hook_fn(module : nn.Module, input_data : torch.Tensor, output : torch.Tensor):
-            self.module_summary_map[module_name] = {"name": module_name, "input_size" : input_data[0].shape, "output_size" : output[0].shape}
+            self.module_summary_map[module_name] = {"name": module_name,
+                                                    "input_size" : input_data[0].shape,
+                                                    "output_size" : output[0].shape}
         return forward_hook_fn
     
     def torch_size_to_str(tensor_size : torch.Size) -> str:
@@ -49,7 +51,8 @@ class TorchModelSummary:
     def __call__(self, module : nn.Module, x: torch.Tensor):
         """ Register the hooks, call forward, print summary and remove hooks """
         for module_name, module in model.named_modules():
-            self.module_hook_map[module_name] = module.register_forward_hook(self.get_forward_hook(module_name))
+            self.module_hook_map[module_name] = 
+              module.register_forward_hook(self.get_forward_hook(module_name))
         _ = model(x)
         
         self.print_summary()
