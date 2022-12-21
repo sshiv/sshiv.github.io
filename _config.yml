@@ -13,14 +13,12 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: MM
+title: (Zero, Zero, Zero)
 email:
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-twitter_username: username
-github_username: username
+ Not fair! When ChatGPT does it, it’s innovation, but when I look at other sources, it is stealing!
+twitter_username: 
+github_username: sshiv
 minimal_mistakes_skin: default
 search: true
 
@@ -58,9 +56,9 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "First Lastname"
+  name   : "Shiv"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  bio    : "I'm not saying I'm a lifelong learner, I'm just saying I have a lot of unfinished courses on Coursera"
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
