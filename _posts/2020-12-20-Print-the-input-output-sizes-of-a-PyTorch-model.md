@@ -50,10 +50,10 @@ class TorchModelSummary:
          
     def __call__(self, module : nn.Module, x: torch.Tensor):
         """ Register the hooks, call forward, print summary and remove hooks """
-        for module_name, module in model.named_modules():
+        for module_name, module in module.named_modules():
             self.module_hook_map[module_name] = 
               module.register_forward_hook(self.get_forward_hook(module_name))
-        _ = model(x)
+        _ = module(x)
         
         self.print_summary()
         
