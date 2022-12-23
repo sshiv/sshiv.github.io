@@ -18,7 +18,8 @@ While it is possible for supporting this feature by modifying the viewer code. T
 import onnx
 
 original_model = onnx.load('mobilenetv2-7.onnx')
-shape_inferred_model = onnx.shape_inference.infer_shapes(original_model)
+shape_inferred_model = \
+              onnx.shape_inference.infer_shapes(original_model)
 onnx.save(shape_inferred_model, 'mobilenetv2-7_shape_inferred.onnx')
 
 ```
