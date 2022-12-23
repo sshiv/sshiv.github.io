@@ -1,7 +1,14 @@
 ---
-published: false
+title: "Display shape information in Netron"
+excerpt_separator: "<!--more-->"
+categories:
+  - Blog
+tags:
+  - python
+  - onnx
+  - netron
 ---
-## Showing shape information in Netron
+## Display shape information in Netron
 
 [Netron](https://github.com/lutzroeder/netron) is an amazing viewer for neural network and machine learning models. It is extremely versatile in the shear number of types of models it can handle. However, one feature that I miss is shape information for the modules. One could sense a theme with me and shapes from my previous post [Get all Input & Output Sizes of for Layers of a PyTorch Model](https://sshiv.github.io/blog/Print-the-input-output-sizes-of-a-PyTorch-model/).
 
