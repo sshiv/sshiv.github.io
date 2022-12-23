@@ -22,8 +22,9 @@ shape_inferred_model = onnx.shape_inference.infer_shapes(original_model)
 onnx.save(shape_inferred_model, 'mobilenetv2-7_shape_inferred.onnx')
 
 ```
-Here is how the output looks after shape data is added to the model. 
-![merged.png]({{site.baseurl}}/_posts/merged.png)
+Here is how the output looks after shape data is added to the model.
+
+![merged.png]({{site.baseurl}}/assets/images/20221222-netron-merged.png)
 
 Note this does increase the size of the onnx file slightly.
 
