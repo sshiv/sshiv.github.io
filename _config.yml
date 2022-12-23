@@ -19,7 +19,7 @@ description: >- # this means to ignore newlines until "baseurl:"
  Not fair! When ChatGPT does it, it’s innovation, but when I look at other sources, it is stealing!
 twitter_username: 
 github_username: sshiv
-minimal_mistakes_skin: default
+minimal_mistakes_skin: dark
 search: true
 
 # Build settings
@@ -33,6 +33,13 @@ timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 include:
   - _pages
+  
+# Analytics
+analytics:
+  provider               : "google-gtag"
+  google:
+    tracking_id          : "G-5YTM5FXRL8"
+    anonymize_ip         : true
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -60,18 +67,18 @@ author:
   avatar : "/assets/images/bio-photo.jpg"
   bio    : "I'm not saying I'm a lifelong learner, I'm just saying I have a lot of unfinished courses on Coursera"
   links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://"
+#    - label: "Website"
+#      icon: "fas fa-fw fa-link"
+#     url: "https://"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+#    - label: "Instagram"
+#      icon: "fab fa-fw fa-instagram"
+#      url: "https://instagram.com/"
 
 footer:
   links:
@@ -81,9 +88,9 @@ footer:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+ #   - label: "Instagram"
+ #     icon: "fab fa-fw fa-instagram"
+ #    url: "https://instagram.com/"
 
 defaults:
   # _posts
