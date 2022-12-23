@@ -19,13 +19,13 @@ description: >- # this means to ignore newlines until "baseurl:"
  Not fair! When ChatGPT does it, it’s innovation, but when I look at other sources, it is stealing!
 twitter_username: 
 github_username: sshiv
-minimal_mistakes_skin: dark
+
 search: true
 
 # Build settings
 markdown: kramdown
-theme: minimal-mistakes-jekyll
 remote_theme: mmistakes/minimal-mistakes
+minimal_mistakes_skin: contrast
 # Outputting
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
