@@ -15,6 +15,7 @@ The hook function gets called every time forward is called on the registered mod
 The following code shows a simple way of wrapping this up to print the input output summary for a pytorch model.
 
 ```python
+
 import torch
 from torch import nn
 
